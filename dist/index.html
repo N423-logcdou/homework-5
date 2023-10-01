@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Aero's Albums</h1>
+      <h2>Add Album</h2>
+      <div id="add-album">
+        <label for="title">Album Title</label>
+        <input type="text" id="title" />
+        <label for="artist">Artist</label>
+        <input type="text" id="artist" />
+        <label for="img">Image Link</label>
+        <input type="text" id="img" />
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" />
+        <input class="form-btn" type="submit" value="Add Album" id="addAlbum" />
+      </div>
+
+      <h2>Search Albums by Genre</h2>
+      <div id="query-form">
+        <label for="query-input">Search by Genre:</label>
+        <input type="text" id="query-input" />
+        <input
+          class="form-btn"
+          type="submit"
+          value="Search"
+          id="getQueryButton"
+        />
+      </div>
+      <div id="albumQuery"></div>
+    </div>
+
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
